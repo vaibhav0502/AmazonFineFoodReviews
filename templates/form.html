@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>{{ title }} Sentiment Analysis</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+</head>
+
+<body>
+    <h1>Welcome To Sentiment Analyzer</h1>
+    <form method="POST">
+        <textarea name="text" placeholder="Say Something:" rows="10" cols="109"></textarea><br><br>
+
+        <input class="example_a" type="submit">
+    </form>
+    {% if final %}
+    <div>
+        <div>
+            <h3>The Sentiment of </h3> <h3>'{{ text }}' </h3> <h2>{{sentiment}}</h2>
+        </div>
+        
+        {% else %}
+        <p></p>
+        {% endif %}
+    </div>
+</body>
+
+</html>
