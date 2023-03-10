@@ -15,7 +15,10 @@
     {% if final %}
     <div>
         <div>
-            <h3>The Sentiment of </h3> <h3>'{{ text }}' </h3> <h2>{{sentiment}}</h2>
+            <!-- <h3>The Sentiment of sentence:: '{{ text }}' </h3> <h2>{{sentiment}}</h2> -->
+
+            <h3>Sentence : '{{ text }}' </h3>
+            <h3>Sentiment : {{ sentiment }} </h3>
         </div>
         
         {% else %}

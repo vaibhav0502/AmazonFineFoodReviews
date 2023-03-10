@@ -1,11 +1,12 @@
+import os
 from flask import Flask, request, render_template
 import pickle
 from clean_text import TextProcess
 
 app = Flask(__name__)
 
-MODEL = pickle.load(open('D:\ML_Krish_Naik\AmazonFineFoodReviews\models\model.pkl', 'rb'))
-WORD_VECTORIZER = pickle.load(open("D:\ML_Krish_Naik\AmazonFineFoodReviews\models\word_vectorizer.pkl", 'rb'))
+MODEL = pickle.load(open(os.path.normpath('models/model.pkl'), 'rb'))
+WORD_VECTORIZER = pickle.load(open(os.path.normpath ("models/word_vectorizer.pkl"), 'rb'))
 CLEAN_OBJ = TextProcess()
 
 MAPPING = {'0': 'Negative', '1': 'Positive'}
