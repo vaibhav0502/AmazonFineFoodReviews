@@ -39,7 +39,7 @@ To determine whether a review is positive or negative and build a machine learni
 - Remove stopwords
 - Remove short words
 
-## 4.Evolution:
+## 4.Evaluation:
 
 ![Capture](https://user-images.githubusercontent.com/42543380/224705315-5f9dde68-e295-4943-8a17-6312ee3ff638.PNG)
 
