@@ -9,11 +9,11 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet, stopwords
 from nltk.stem.wordnet import WordNetLemmatizer
 
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('wordnet')
-# nltk.download('omw-1.4')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 
 STOPWORDS =  [
